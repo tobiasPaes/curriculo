@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(98, 95, 95);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .curriculo{
     display: inline-block;
     position: relative;
@@ -12,7 +23,13 @@
 .fotinha{  
     float: right;
 }
-
+.coisa{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+}
 .descricao{
     font-size: large;
     font-family: 'Dosis', sans-serif;
@@ -20,39 +37,27 @@
 }
 
 .lista{
+    display: inline-block;
     padding-left: 30px;
     margin: 10px;
+    margin-right: 50px;
 }
 
 .tabela{
+
+    display: inline-block;
     border-collapse: collapse;
     margin: 10px;
-    background-color: rgba(31, 31, 31, 0.5);
 }
 
 .tabelaDir{
     padding-right: 10px;
 }
 
-thead{
-    background-color: rgb(40, 90, 50);
-}
+
 
 /*contato pela midias*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #242329;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-}
 
 .icons{
     display: flex;
@@ -87,18 +92,15 @@ body {
     ;
 }
 .icon--twitter:hover{
-    background-image:radial-gradient(circle at 107%,
-    #1da1f2 0%, #1da1f2 5%, #1da1f2 45%, #1da1f2 60%, #1da1f2 90%);;
+    background-color: #1da1f2;
     outline-color: #1da1f2;
 }
 .icon--linkedin:hover{
-    background-image: radial-gradient(circle at 107%,
-    #0077b5 0%, #0077b5 5%, #0077b5 45%, #0077b5 60%, #0077b5 90%);
+    background-color: #0077b5;
     outline-color: #0077b5;
 }
 .icon--github:hover{
-    background-image:radial-gradient(circle at 30% 107%, 
-    #2ea44f 0%, #2ea44f 5%, #2ea44f 45%, #2ea44f 60%, #2ea44f 90%);
+    background-color: #2ea44f;
     outline-color: #2ea44f;
 }
 @keyframes shake {
